@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "linkedin-clone-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
