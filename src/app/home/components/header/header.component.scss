@@ -1,0 +1,64 @@
+.header-wrapper {
+	border-bottom: 1px solid var(--ion-color-light-tint);
+}
+
+.header-toolbar-wrapper {
+	display: flex;
+	max-width: 1128px;
+	margin: auto;
+
+	&__logo {
+		font-size: 40px;
+	}
+
+	&__searchbar {
+		--box-shadow: none;
+		// TODO: is there a better way of doing this?
+		transform: scale(.8);
+		margin-left: -40px;
+	}
+}
+
+.header-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+	position: relative;
+	width: 80px !important;
+	text-align: center;
+
+	&__icon {
+		font-size: 24px;
+	}
+
+	&__avatar {
+		width: 24px;
+		height: 24px;
+	}
+
+	&__badge {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		right: 24px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	&__caret {
+		font-size: 16px;
+	}
+}
+
+

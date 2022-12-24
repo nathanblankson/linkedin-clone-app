@@ -1,0 +1,68 @@
+<ion-header class="header-wrapper ion-container ion-no-border">
+	<ion-toolbar>
+		<div class="header-toolbar-wrapper">
+			<ion-buttons slot="start" class="ion-no-padding">
+				<ion-button>
+					<ion-icon
+						color="primary"
+						class="header-toolbar-wrapper__logo"
+						name="logo-linkedin"
+					>
+					</ion-icon>
+				</ion-button>
+
+				<ion-searchbar
+					color="tertiary"
+					class="header-toolbar-wrapper__searchbar ion-hide-lg-down"
+					placeholder="Search"
+				>
+				</ion-searchbar>
+			</ion-buttons>
+
+			<ion-grid>
+				<ion-row class="ion-justify-content-end">
+					<ion-col class="header-link" size="auto">
+						<ion-icon class="header-link__icon" name="home">
+						</ion-icon>
+						<div class="header-link__text">Home</div>
+					</ion-col>
+
+					<ion-col class="header-link" size="auto">
+						<ion-icon class="header-link__icon" name="people">
+						</ion-icon>
+						<div class="header-link__text">My Network</div>
+					</ion-col>
+
+					<ion-col class="header-link" size="auto">
+						<ion-icon class="header-link__icon" name="briefcase">
+						</ion-icon>
+						<div class="header-link__text">Jobs</div>
+					</ion-col>
+
+					<ion-col class="header-link" size="auto">
+						<ion-icon class="header-link__icon" name="chatbox-ellipses">
+						</ion-icon>
+						<div class="header-link__text">Messaging</div>
+					</ion-col>
+
+					<ion-col class="header-link" size="auto">
+						<ion-icon class="header-link__icon" name="notifications">
+						</ion-icon>
+						<ion-badge class="header-link__badge" color="danger">2</ion-badge>
+						<div class="header-link__text">Notifications</div>
+					</ion-col>
+
+					<ion-col class="header-link" size="auto" (click)="presentPopover($event)">
+						<ion-avatar class="header-link__avatar">
+							<ion-img src="/assets/img/nathan.png"></ion-img>
+						</ion-avatar>
+						<div class="header-link__text">
+							<span>Me</span>
+							<ion-icon class="header-link__caret" name="caret-down-outline"></ion-icon>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</div>
+	</ion-toolbar>
+</ion-header>
