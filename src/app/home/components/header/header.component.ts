@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 
-import { AvatarPopoverComponent } from '../avatar-popover/avatar-popover.component';
+import { AvatarPopoverComponent } from './avatar-popover/avatar-popover.component';
 
 @Component({
 	selector: 'app-header',
