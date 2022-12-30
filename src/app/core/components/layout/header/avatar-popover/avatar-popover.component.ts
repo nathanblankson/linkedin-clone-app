@@ -1,4 +1,7 @@
+// -- Angular
 import { Component, OnInit } from '@angular/core';
+
+// -- Third party
 import { IonicModule } from '@ionic/angular';
 
 @Component({

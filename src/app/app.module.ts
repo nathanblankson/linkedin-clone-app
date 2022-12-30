@@ -16,9 +16,12 @@ import { AppComponent } from './app.component';
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
+		// -- Angular
 		HttpClientModule,
 		BrowserModule,
+		// -- Third party
 		IonicModule.forRoot(),
+		// -- Local files
 		AppRoutingModule,
 	],
 	providers: [

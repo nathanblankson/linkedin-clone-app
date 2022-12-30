@@ -1,6 +1,10 @@
+// -- Angular
 import { Component, OnInit } from '@angular/core';
+
+// -- Third party
 import { IonicModule, PopoverController } from '@ionic/angular';
 
+// -- Standalone components
 import { AvatarPopoverComponent } from './avatar-popover/avatar-popover.component';
 
 @Component({

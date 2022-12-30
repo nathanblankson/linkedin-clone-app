@@ -5,8 +5,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonInfiniteScroll } from '@ionic/angular';
 
 // -- Local files
-import { PostService } from '../../../core/services/post/post.service';
-import { GetSelectedPostsParams, Post } from '../../../core/models/post.model';
+import { PostService } from '@core/services/post/post.service';
+import { GetSelectedPostsParams, Post } from '@core/models/post.model';
 
 @Component({
 	selector: 'app-all-posts',
