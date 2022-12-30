@@ -1,34 +1,47 @@
+// -- Angular
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+// -- Third party
 import { IonicModule } from '@ionic/angular';
 
-import { AdvertisingComponent } from './components/advertising/advertising.component';
-import { AllPostsComponent } from './components/all-posts/all-posts.component';
-import { AvatarPopoverComponent } from './components/header/avatar-popover/avatar-popover.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ProfileSummaryComponent } from './components/profile-summary/profile-summary.component';
-import { ModalComponent } from './components/start-post/modal/modal.component';
-import { StartPostComponent } from './components/start-post/start-post.component';
+// -- Local files
 import { HomePageRoutingModule } from './home-routing.module';
+
+// -- Standalone components
+import { HeaderComponent } from '../core/components/layout/header/header.component';
+
+// -- Pages
 import { HomePage } from './pages/home.page';
 
+// -- Components
+import { AdvertisingComponent } from './components/advertising/advertising.component';
+import { AllPostsComponent } from './components/all-posts/all-posts.component';
+import { ProfileSummaryComponent } from './components/profile-summary/profile-summary.component';
+import { StartPostModalComponent } from './components/start-post/start-post-modal/start-post-modal.component';
+import { StartPostComponent } from './components/start-post/start-post.component';
 
 @NgModule({
 	imports: [
+		// -- Angular
 		CommonModule,
 		FormsModule,
+		// -- Third Party
 		IonicModule,
-		HomePageRoutingModule
+		// -- Local files
+		HomePageRoutingModule,
+		// -- Standalone components
+		HeaderComponent,
 	],
 	declarations: [
+		// -- Pages
+		HomePage,
+		// -- Components
 		AdvertisingComponent,
 		AllPostsComponent,
-		AvatarPopoverComponent,
-		HeaderComponent,
-		HomePage,
-		ModalComponent,
 		ProfileSummaryComponent,
+		StartPostModalComponent,
 		StartPostComponent,
 	]
 })

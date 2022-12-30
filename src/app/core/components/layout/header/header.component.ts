@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
+import { IonicModule, PopoverController } from '@ionic/angular';
 
 import { AvatarPopoverComponent } from './avatar-popover/avatar-popover.component';
 
@@ -7,6 +7,13 @@ import { AvatarPopoverComponent } from './avatar-popover/avatar-popover.componen
 	selector: 'app-header',
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss'],
+	standalone: true,
+	imports: [
+		// -- Third party
+		IonicModule,
+		// -- Standalone components
+		AvatarPopoverComponent,
+	]
 })
 export class HeaderComponent implements OnInit {
 
