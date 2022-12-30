@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { AdvertisingComponent } from './components/advertising/advertising.component';
+import { AllPostsComponent } from './components/all-posts/all-posts.component';
 import { AvatarPopoverComponent } from './components/header/avatar-popover/avatar-popover.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileSummaryComponent } from './components/profile-summary/profile-summary.component';
@@ -22,6 +23,7 @@ import { HomePage } from './pages/home.page';
 	],
 	declarations: [
 		AdvertisingComponent,
+		AllPostsComponent,
 		AvatarPopoverComponent,
 		HeaderComponent,
 		HomePage,
