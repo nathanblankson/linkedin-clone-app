@@ -33,6 +33,7 @@ export class AllPostsComponent implements OnInit {
 	}
 
 	public getPosts(event: any) {
+		// For demo purposes, we cap the number of available posts to display at 20
 		if (event && this.numOfPostsToSkip === 20) {
 			event.target.disabled = true;
 		}
