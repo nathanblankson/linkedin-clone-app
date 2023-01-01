@@ -6,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './pages/home.page';
 
 // -- Standalone components
-import { LayoutComponent } from '@core/components/layout/layout/layout.component';
+import { LayoutComponent } from '@core/components/layout/layout.component';
 
 const routes: Routes = [
 	{

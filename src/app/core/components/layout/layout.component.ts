@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 // -- Standalone components
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
 	selector: 'app-layout',
