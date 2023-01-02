@@ -25,50 +25,5 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-/* === Ion === */
-
-/* App */
-ion-app {
-	background: #f3f2ef;
-	color: #000000;
-}
-
-/* Button */
-ion-button {
-	text-transform: initial;
-
-	ion-text {
-		margin-left: 8px;
-	}
-}
-
-/* === Local === */
-
-/* Popover */
-.avatar-popover {
-	margin-top: 16px;
-	--width: 300px;
-	--background: none;
-	--box-shadow: none;
-}
-
-/* Divider */
-.item-divider {
-	border-bottom: 1px solid var(--ion-color-light-tint);
-}
-
-/* Start Post Modal */
-.start-post-modal {
-	--width: 552px;
-	--height: 400px;
-	margin-top: -400px;
-
-	ion-grid {
-		margin: 0;
-		padding-bottom: 0;
-	}
-
-	ion-textarea {
-		--padding-top: 0;
-	}
-}
+/* Import our styles */
+@import "./styles//index";
