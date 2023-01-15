@@ -1,3 +1,36 @@
-<p>
-  mobile-tabs works!
-</p>
+<ion-toolbar>
+	<ion-tabs>
+		<ion-tab-bar>
+			<ion-tab-button class="mobile-tab-link">
+				<ion-icon class="mobile-tab-link__icon" name="home"></ion-icon>
+				<div class="mobile-tab-link__text">Home</div>
+			</ion-tab-button>
+
+			<ion-tab-button class="mobile-tab-link">
+				<ion-icon class="mobile-tab-link__icon" name="people"></ion-icon>
+				<div class="mobile-tab-link__text">My Network</div>
+			</ion-tab-button>
+
+			<ion-tab-button class="mobile-tab-link" (click)="handleCreatePost()">
+				<ion-icon class="mobile-tab-link__icon" name="add-circle"></ion-icon>
+				<div class="mobile-tab-link__text">Post</div>
+			</ion-tab-button>
+
+			<ion-tab-button class="mobile-tab-link">
+				<ion-icon class="mobile-tab-link__icon" name="notifications">
+				</ion-icon>
+				<ion-badge class="mobile-tab-link__badge" color="danger">
+					<ion-text class="mobile-tab-link__badge-text">
+						2
+					</ion-text>
+				</ion-badge>
+				<div class="mobile-tab-link__text">Notifications</div>
+			</ion-tab-button>
+
+			<ion-tab-button class="mobile-tab-link">
+				<ion-icon class="mobile-tab-link__icon" name="briefcase"></ion-icon>
+				<div class="mobile-tab-link__text">Jobs</div>
+			</ion-tab-button>
+		</ion-tab-bar>
+	</ion-tabs>
+</ion-toolbar>

@@ -1,11 +1,8 @@
 @import "styles/mixins/media-queries";
 
 :host {
-	justify-content: start;
-}
-
-.content-container {
 	display: flex;
+	justify-content: start;
 	flex-direction: row;
 	width: 1128px;
 	margin: 40px auto 0;

@@ -18,7 +18,7 @@ export class StartPostComponent {
 		public modalController: ModalController,
 	) {}
 
-	public async presentModal() {
+	public async handleCreatePost() {
 		const modal = await this.modalController.create({
 			component: StartPostModalComponent,
 			cssClass: 'start-post-modal'

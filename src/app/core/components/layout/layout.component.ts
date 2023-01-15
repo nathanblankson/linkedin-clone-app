@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 // -- Standalone components
 import { HeaderComponent } from './header/header.component';
+import { MobileTabsComponent } from './mobile-tabs/mobile-tabs.component';
 
 @Component({
 	selector: 'app-layout',
@@ -15,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 		RouterModule,
 		// -- Standalone components
 		HeaderComponent,
+		MobileTabsComponent,
 	]
 })
 export class LayoutComponent {}

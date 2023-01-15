@@ -1,0 +1,25 @@
+ion-toolbar {
+	height: 58px;
+}
+
+.mobile-tab-link {
+	position: relative;
+	padding-top: 4px;
+
+	&__badge {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		margin-left: -6px;
+		margin-top: -10px;
+		border-radius: 50%;
+	}
+
+	&__badge-text {
+		font-weight: 400;
+		font-size: 12px;
+	}
+}

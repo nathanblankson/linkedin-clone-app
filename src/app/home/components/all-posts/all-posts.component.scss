@@ -1,50 +1,49 @@
-.all-posts-container {
+:host {
 	display: flex;
+}
 
-	ion-content {
-		height: calc(100vh - 320px);
+ion-content {
+	height: calc(100vh - 320px);
 
-		ion-list {
-			padding-top: 0;
-			background-color: #f3f2ef;
+	ion-list {
+		padding-top: 0;
+		background-color: #f3f2ef;
+	}
+
+	ion-card {
+		box-shadow: none;
+		border: 1px solid #e1e1e1;
+
+		ion-avatar {
+			width: 48px;
+			height: 48px;
 		}
 
-		ion-card {
-			width: 518px;
-			box-shadow: none;
-			border: 1px solid #e1e1e1;
+		.full-name {
+			font-weight: 500;
+		}
 
-			ion-avatar {
-				width: 48px;
-				height: 48px;
-			}
+		.role {
+			margin-top: 2px;
+			margin-bottom: 1px;
+			font-size: 12px;
+		}
 
-			.full-name {
-				font-weight: 500;
-			}
+		.meta-data {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 80px;
+			font-size: 12px;
+		}
 
-			.role {
-				margin-top: 2px;
-				margin-bottom: 1px;
-				font-size: 12px;
-			}
+		ion-icon[name="ellipse"] {
+			font-size: 4px;
+		}
 
-			.meta-data {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				width: 80px;
-				font-size: 12px;
-			}
-
-			ion-icon[name="ellipse"] {
-				font-size: 4px;
-			}
-
-			.post-body {
-				margin: 0;
-				padding: 0 16px;
-			}
+		.post-body {
+			margin: 0;
+			padding: 0 16px;
 		}
 	}
 }
