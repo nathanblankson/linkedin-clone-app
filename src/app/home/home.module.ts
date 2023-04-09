@@ -13,7 +13,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderComponent } from '../core/components/layout/header/header.component';
 
 // -- Pages
-import { HomePage } from './pages/home.page';
+import { HomePage } from './pages/home/home.page';
 
 // -- Components
 import { AdvertisingComponent } from './components/advertising/advertising.component';

@@ -1,0 +1,69 @@
+<ion-content class="auth">
+	<app-auth-title>
+	</app-auth-title>
+
+	<form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+		<ion-card>
+			<ion-item>
+				<ion-label position="floating">First Name</ion-label>
+				<ion-input type="text" formControlName="firstName">
+				</ion-input>
+			</ion-item>
+			<ion-text *ngIf="firstNameControl.invalid && firstNameControl.touched" color="danger">
+				Please enter your first name
+			</ion-text>
+
+			<ion-item>
+				<ion-label position="floating">Last Name</ion-label>
+				<ion-input type="text" formControlName="lastName">
+				</ion-input>
+			</ion-item>
+			<ion-text *ngIf="lastNameControl.invalid && lastNameControl.touched" color="danger">
+				Please enter your last name
+			</ion-text>
+
+			<ion-item>
+				<ion-label position="floating">Email</ion-label>
+				<ion-input type="email" formControlName="email">
+				</ion-input>
+			</ion-item>
+			<ion-text *ngIf="emailControl.invalid && emailControl.touched" color="danger">
+				Please enter a valid email
+			</ion-text>
+
+			<ion-item>
+				<ion-label position="floating">Password</ion-label>
+				<ion-input type="password" formControlName="password">
+				</ion-input>
+			</ion-item>
+			<ion-text *ngIf="passwordControl.invalid && passwordControl.touched" color="danger">
+				Please enter a valid password
+			</ion-text>
+
+			<p class="signup__terms-and-conditions">
+				By clicking Agree & Join you agree to the LinkedIn
+				<ion-text color="primary">User Agreement</ion-text>,
+				<ion-text color="primary">Privacy Policy</ion-text>, and
+				<ion-text color="primary">Cookie Policy</ion-text>.
+			</p>
+
+			<ion-button
+				type="submit"
+				expand="block"
+				color="primary"
+				shape="round"
+				[disabled]="signupForm.invalid">
+				Agree & Join
+			</ion-button>
+		</ion-card>
+	</form>
+
+	<div class="auth__navigate-link">
+		Already on LinkedIn?
+		<ion-text color="primary" routerLink="/login" >
+			Sign in
+		</ion-text>
+	</div>
+</ion-content>
+
+
